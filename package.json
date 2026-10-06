@@ -1,0 +1,8 @@
+{
+  "name": "ait-wakrime-academic-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync-scholar": "node scripts/sync-scholar.mjs"
+  }
+}

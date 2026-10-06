@@ -1,0 +1,717 @@
+{
+  "source": "Google Scholar",
+  "profile_url": "https://scholar.google.com/citations?user=r0OoVlQAAAAJ&hl=en&oi=ao",
+  "scholar_id": "r0OoVlQAAAAJ",
+  "last_sync": "2026-10-06T17:19:05.809Z",
+  "profile": {
+    "name": "Abderrahim AIT WAKRIME",
+    "affiliation": "Computer Science Department, Faculty of Sciences, Mohammed V University in Rabat, Morocco",
+    "email": "Verified email at um5r.ac.ma",
+    "interests": [
+      {
+        "title": "Complex Systems",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:complex_systems",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Acomplex_systems"
+      },
+      {
+        "title": "Formal methods",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:formal_methods",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Aformal_methods"
+      },
+      {
+        "title": "Safety",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:safety",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Asafety"
+      },
+      {
+        "title": "Security",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:security",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Asecurity"
+      },
+      {
+        "title": "Model-driven engineering",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:model_driven_engineering",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Amodel_driven_engineering"
+      }
+    ],
+    "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=r0OoVlQAAAAJ&citpid=2",
+    "citations": 328,
+    "hIndex": 11,
+    "i10Index": 12,
+    "citationsSince": 328
+  },
+  "citations_per_year": [
+    {
+      "year": 2015,
+      "citations": 9
+    },
+    {
+      "year": 2016,
+      "citations": 2
+    },
+    {
+      "year": 2017,
+      "citations": 2
+    },
+    {
+      "year": 2018,
+      "citations": 2
+    },
+    {
+      "year": 2019,
+      "citations": 24
+    },
+    {
+      "year": 2020,
+      "citations": 45
+    },
+    {
+      "year": 2021,
+      "citations": 31
+    },
+    {
+      "year": 2022,
+      "citations": 34
+    },
+    {
+      "year": 2023,
+      "citations": 46
+    },
+    {
+      "year": 2024,
+      "citations": 51
+    },
+    {
+      "year": 2025,
+      "citations": 51
+    },
+    {
+      "year": 2026,
+      "citations": 29
+    }
+  ],
+  "public_access": null,
+  "co_authors": [],
+  "publications": [
+    {
+      "citation_id": "r0OoVlQAAAAJ:aqlVkmm33-oC",
+      "title": "An event-B based approach for formal modelling and verification of smart contracts",
+      "authors": "A Lahbib, A Ait Wakrime, A Laouiti, K Toumi, S Martin",
+      "publication": "International conference on advanced information networking and applications …, 2020",
+      "year": 2020,
+      "citations": 27,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:aqlVkmm33-oC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12990221121349710696"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:HDshCWvjkbEC",
+      "title": "Autonomous solution for controller placement problem of software-defined networking using MuZero based intelligent agents",
+      "authors": "O Benoudifa, A Ait Wakrime, R Benaini",
+      "publication": "Journal of King Saud University Computer and Information Sciences 35 (10 …, 2023",
+      "year": 2023,
+      "citations": 24,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:HDshCWvjkbEC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4266449225999936340"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:kNdYIx-mwKoC",
+      "title": "Towards a tool-based domain specific approach for railway systems modeling and validation",
+      "authors": "A Idani, Y Ledru, A Ait Wakrime, RB Ayed, P Bon",
+      "publication": "International Conference on Reliability, Safety, and Security of Railway …, 2019",
+      "year": 2019,
+      "citations": 24,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:kNdYIx-mwKoC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8810941263144351597"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:hqOjcs7Dif8C",
+      "title": "Formalizing railway signaling system ERTMS/ETCS using UML/Event-B",
+      "authors": "A Ait Wakrime, RB Ayed, S Collart-Dutilleul, Y Ledru, A Idani",
+      "publication": "International Conference on Model and Data Engineering, 321-330, 2018",
+      "year": 2018,
+      "citations": 21,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:hqOjcs7Dif8C",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15806732693329224146"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:IWHjjKOFINEC",
+      "title": "A deep reinforcement learning framework with formal verification",
+      "authors": "Z Boudi, AA Wakrime, M Toub, M Haloua",
+      "publication": "Formal Aspects of Computing 35 (1), 1-17, 2023",
+      "year": 2023,
+      "citations": 18,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:IWHjjKOFINEC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11655248968052739539"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:YOwf2qJgpHMC",
+      "title": "Incremental Development of a Safety Critical System Combining formal Methods and DSMLs",
+      "authors": "A Idani, Y Ledru, A Ait Wakrime, RB Ayed, S Collart-Dutilleul",
+      "publication": "International Workshop on Formal Methods for Industrial Critical Systems, 93-109, 2019",
+      "year": 2019,
+      "citations": 18,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:YOwf2qJgpHMC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12858037393960937372"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:3fE2CSJIrl8C",
+      "title": "Cloud service composition using minimal unsatisfiability and genetic algorithm",
+      "authors": "A Ait Wakrime, M Rekik, S Jabbour",
+      "publication": "Concurrency and Computation: Practice and Experience 32 (15), e5282, 2020",
+      "year": 2020,
+      "citations": 17,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:3fE2CSJIrl8C",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16271433646242756804"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:M3ejUd6NZC8C",
+      "title": "Formal approach to model complex adaptive computing systems",
+      "authors": "A Jarrar, A Ait Wakrime, Y Balouki",
+      "publication": "Complex Adaptive Systems Modeling 8 (1), 3, 2020",
+      "year": 2020,
+      "citations": 14,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:M3ejUd6NZC8C",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11707829709651727208"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:WF5omc3nYNoC",
+      "title": "Automating Data warehouse design using ontology",
+      "authors": "B Aadil, A Ait Wakrime, L Kzaz, A Sekkaki",
+      "publication": "2016 International Conference on Electrical and Information Technologies …, 2016",
+      "year": 2016,
+      "citations": 13,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:WF5omc3nYNoC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11097955041505598440"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:4TOpqqG69KYC",
+      "title": "A Model-based Approach for the Modeling and the Verification of Railway Signaling System",
+      "authors": "R Bougacha, A Ait Wakrime, S Kallel, RB Ayed, S Collart-Dutilleul",
+      "publication": "Proceedings of the 14th International Conference on Evaluation of Novel …, 2019",
+      "year": 2019,
+      "citations": 11,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:4TOpqqG69KYC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8827065591011882822"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:2osOgNQ5qMEC",
+      "title": "Relaxation based saas for repairing failed queries over the cloud computing",
+      "authors": "A Ait Wakrime, S Benbernou, S Jabbour",
+      "publication": "2015 IEEE 12th International Conference on e-Business Engineering, 245-250, 2015",
+      "year": 2015,
+      "citations": 11,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:2osOgNQ5qMEC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8207078892258717954"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:LkGwnXOMwfcC",
+      "title": "Formal Approach for QoS-Aware Cloud Service Composition",
+      "authors": "A Ait Wakrime, S Jabbour",
+      "publication": "2017 IEEE 26th International Conference on Enabling Technologies …, 2017",
+      "year": 2017,
+      "citations": 10,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:LkGwnXOMwfcC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11323084151281451293"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:qxL8FJ1GzNcC",
+      "title": "A model-driven engineering approach for business process based saas services composition",
+      "authors": "N Fattouch, M Rekik, A Ait Wakrime, K Boukadi",
+      "publication": "2019 IEEE/ACS 16th International Conference on Computer Systems and …, 2019",
+      "year": 2019,
+      "citations": 8,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:qxL8FJ1GzNcC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9813804636785143643"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:MXK_kJrjxJIC",
+      "title": "A separation of concerns approach for the verified modelling of railway signalling rules",
+      "authors": "Y Ledru, A Idani, RB Ayed, A Ait Wakrime, P Bon",
+      "publication": "International Conference on Reliability, Safety, and Security of Railway …, 2019",
+      "year": 2019,
+      "citations": 8,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:MXK_kJrjxJIC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14846899632721713924"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:5nxA0vEk-isC",
+      "title": "Formalising the Requirements of an E-Voting Software Product Line Using Event-B",
+      "authors": "A Ait Wakrime, JP Gibson, JL Raffy",
+      "publication": "2018 IEEE 27th International Conference on Enabling Technologies …, 2018",
+      "year": 2018,
+      "citations": 8,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:5nxA0vEk-isC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16043499730614177110"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:ufrVoPGSRksC",
+      "title": "Satisfiability-Based Privacy-Aware Cloud Computing",
+      "authors": "A Ait Wakrime",
+      "publication": "The Computer Journal 60 (12), 1760-1769, 2017",
+      "year": 2017,
+      "citations": 8,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:ufrVoPGSRksC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4569018261912154778"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:hFOr9nPyWt4C",
+      "title": "A transformation methodology for Capella to Event-B models with DSL verification",
+      "authors": "K Bouba, A Ait Wakrime, Y Ouhammou, R Benaini",
+      "publication": "Journal of Computer Languages 77, 101241, 2023",
+      "year": 2023,
+      "citations": 7,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:hFOr9nPyWt4C",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12541124530881892008"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:_kc_bZDykSQC",
+      "title": "Introducing B-Sequenced Petri Nets as a CPN Sub-class for Safe Train Control",
+      "authors": "Z Boudi, A Ait Wakrime, S Collart-Dutilleul, M Haloua",
+      "publication": "Proceedings of the 14th International Conference on Evaluation of Novel …, 2019",
+      "year": 2019,
+      "citations": 7,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:_kc_bZDykSQC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5222271725112644736"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:isC4tDSrTZIC",
+      "title": "Securing SDN controller placement with MuZero and blockchain-based smart contracts",
+      "authors": "O Benoudifa, A Ait Wakrime, R Benaini",
+      "publication": "Journal of King Saud University Computer and Information Sciences 37 (5), 105, 2025",
+      "year": 2025,
+      "citations": 6,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:isC4tDSrTZIC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2566357002992370635"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:ULOm3_A8WrAC",
+      "title": "On the Fly Reconfiguration of BPaaS Based on SaaS Services Federation and SAT Solving Techniques",
+      "authors": "M Rekik, A Ait Wakrime, N Cheniki, Y Sam",
+      "publication": "2019 IEEE 28th International Conference on Enabling Technologies …, 2019",
+      "year": 2019,
+      "citations": 6,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:ULOm3_A8WrAC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11474749585889418145"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:u5HHmVD_uO8C",
+      "title": "Place-liveness of comsa applications",
+      "authors": "A Ait Wakrime, S Limet, S Robert",
+      "publication": "International Conference on Formal Aspects of Component Software, 346-363, 2014",
+      "year": 2014,
+      "citations": 6,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:u5HHmVD_uO8C",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5178416064519284587"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:QIV2ME_5wuYC",
+      "title": "Formalizing ontologies for AI models validation: from OWL to Event-B",
+      "authors": "MO Bah, Z Boudi, M Toub, A Ait Wakrime, G Aniba",
+      "publication": "2021 IEEE 15th International Conference on Semantic Computing (ICSC), 455-462, 2021",
+      "year": 2021,
+      "citations": 5,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:QIV2ME_5wuYC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17059065196582928317"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:4DMP91E08xMC",
+      "title": "Toward reconfiguration of BPaaS based on SaaS services using clustering and boolean satisfiability",
+      "authors": "A Ait Wakrime, H Labbaci, M Rekik, N Cheniki, Y Sam",
+      "publication": "SN Computer Science 1 (3), 156, 2020",
+      "year": 2020,
+      "citations": 5,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:4DMP91E08xMC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12151722467229179469"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:Zph67rFs4hoC",
+      "title": "A SAT-Based Formal Approach for Verifying Business Process Configuration",
+      "authors": "A Ait Wakrime, S Boubaker, S Kallel, W Gaaloul",
+      "publication": "International Conference on Big Data Innovations and Applications, 47-62, 2019",
+      "year": 2019,
+      "citations": 5,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:Zph67rFs4hoC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17716621774899982752"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:TQgYirikUcIC",
+      "title": "Linking context to data warehouse design",
+      "authors": "A Bouchra, K Larbi, A Wakrime, S Abderrahim",
+      "publication": "International Journal of Advanced Computer Science and Applications 10 (1 …, 2019",
+      "year": 2019,
+      "citations": 5,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:TQgYirikUcIC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17468509053113051241"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:bEWYMUwI8FkC",
+      "title": "Advances in the security of SDNs: Exploration of recent ML-based approaches",
+      "authors": "I Mellal, AA Wakrime, K Boukir",
+      "publication": "International Conference on Smart Applications and Data Analysis, 215-228, 2024",
+      "year": 2024,
+      "citations": 4,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:bEWYMUwI8FkC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18264478510403819665"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:e5wmG9Sq2KIC",
+      "title": "Smart mining and consensus protocols in blockchain-enabled industrial cyber-physical systems: a survey",
+      "authors": "SE Elgharbi, S Ouchani, A Ait Wakrime, Y Ouhammou",
+      "publication": "Proceedings of the 7th international conference on future networks and …, 2023",
+      "year": 2023,
+      "citations": 4,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:e5wmG9Sq2KIC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13974781364769191899"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:0EnyYjriUFMC",
+      "title": "Petri Nets to Event-B: Handling Mathematical Sequences Through an ERTMS L3 Case",
+      "authors": "Z Boudi, A Ait Wakrime, S Collart-Dutilleul, M Haloua",
+      "publication": "International Conference on Model and Data Engineering, 50-62, 2018",
+      "year": 2018,
+      "citations": 4,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:0EnyYjriUFMC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11696083102135759048"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:dhFuZR0502QC",
+      "title": "A Formal model for configurable business process with optimal cloud resource allocation",
+      "authors": "A Ait Wakrime, S Boubaker, S Kallel, E Guermazi, W Gaaloul",
+      "publication": "Journal of Universal Computer Science 27 (7), 693-713, 2021",
+      "year": 2021,
+      "citations": 3,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:dhFuZR0502QC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13511564821015601157"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:_FxGoFyzp5QC",
+      "title": "On repairing queries in cloud computing",
+      "authors": "A Ait Wakrime, S Jabbour",
+      "publication": "2016 IEEE/ACS 13th International Conference of Computer Systems and …, 2016",
+      "year": 2016,
+      "citations": 3,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:_FxGoFyzp5QC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3703374284872083554"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:Wp0gIr-vW9MC",
+      "title": "Building Valid Career Ontologies with B-CPNs",
+      "authors": "Z Boudi, A Ait Wakrime, M Toub, M Haloua",
+      "publication": "International Conference on Smart Applications and Data Analysis, 33-46, 2020",
+      "year": 2020,
+      "citations": 2,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:Wp0gIr-vW9MC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1160318682598121372"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:qjMakFHDy7sC",
+      "title": "Minimum unsatisfiability based QoS web service composition over the cloud computing",
+      "authors": "A Ait Wakrime, S Jabbour",
+      "publication": "2015 15th International Conference on Intelligent Systems Design and …, 2015",
+      "year": 2015,
+      "citations": 2,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:qjMakFHDy7sC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5296421063811078814"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:d1gkVwhDpl0C",
+      "title": "On the fly reconfiguration of interactive scientific visualization applications",
+      "authors": "A Ait Wakrime, S Limet, S Robert",
+      "publication": "2015 International Conference on High Performance Computing & Simulation …, 2015",
+      "year": 2015,
+      "citations": 2,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:d1gkVwhDpl0C",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18007673684697666275"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:mB3voiENLucC",
+      "title": "Advances in Model and Data Engineering in the Digitalization Era",
+      "authors": "P Fournier-Viger, L Bellatreche, Philippe/Hassan Fournier-Viger (Ahme)",
+      "publication": "",
+      "year": 2023,
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:mB3voiENLucC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16301056942657665956"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:7PzlFSSx8tAC",
+      "title": "Advances in modeling, verification and testing of safety-critical software architectures: AA Wakrime, Y. Ouhammou",
+      "authors": "A Ait Wakrime, Y Ouhammou",
+      "publication": "Innovations in Systems and Software Engineering 18 (4), 483-484, 2022",
+      "year": 2022,
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:7PzlFSSx8tAC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15887905542663972763"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:ZeXyd9-uunAC",
+      "title": "Towards the Strengthening of Capella Modeling Semantics by Integrating Event-B: A Rigorous Model-Based Approach for Safety-Critical Systems",
+      "authors": "K Bouba, A Ait Wakrime, Y Ouhammou, R Benaini",
+      "publication": "International Conference on Model and Data Engineering, 119-132, 2022",
+      "year": 2022,
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:ZeXyd9-uunAC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14879441321644733766"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:UebtZRa9Y70C",
+      "title": "A MaxSAT based approach for QoS cloud services",
+      "authors": "A Ait Wakrime, S Jabbour, N Hameurlain",
+      "publication": "International Journal of Parallel, Emergent and Distributed Systems 35 (6 …, 2020",
+      "year": 2020,
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:UebtZRa9Y70C",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13773748623766392701"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:9ZlFYXVOiuMC",
+      "title": "Track report of future internet services and applications (FISA’2020)",
+      "authors": "A Ait Wakrime, R ben Halima, M Sellami",
+      "publication": "2020 IEEE 29th International Conference on Enabling Technologies …, 2020",
+      "year": 2020,
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:9ZlFYXVOiuMC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=866055649427116032"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:eQOLeE2rZwMC",
+      "title": "Automating Data Warehouse Design Using Ontology",
+      "authors": "A Bouchra, A Ait Wakrime, A Sekkaki, K Larbi",
+      "publication": "",
+      "year": 2016,
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:eQOLeE2rZwMC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13903728533838356125"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:YsMSGLbcyi4C",
+      "title": "Web Service Composition as minimal unsatisfiability",
+      "authors": "A Ait Wakrime, S Jabbour, A Belabed",
+      "publication": "2016 International Conference on Electrical and Information Technologies …, 2016",
+      "year": 2016,
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:YsMSGLbcyi4C",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7401277050753174601"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:IjCSPb-OGe4C",
+      "title": "On QoS web service composition using satisfiability",
+      "authors": "A Ait Wakrime, S Jabbour",
+      "publication": "2015 5th International Conference on Information & Communication Technology …, 2015",
+      "year": 2015,
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:IjCSPb-OGe4C",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15827043770857338506"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:W7OEmFMy1HYC",
+      "title": "Une approche par composants pour l'analyse visuelle interactive de résultats issus de simulations numériques",
+      "authors": "A Ait Wakrime",
+      "publication": "",
+      "year": 2015,
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:W7OEmFMy1HYC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15449173982659488689"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:Y0pCki6q_DkC",
+      "title": "Modeling interactive scientific visualization applications with strict colored fifo nets",
+      "authors": "A Ait Wakrime, S Limet, S Robert",
+      "publication": "",
+      "year": 2014,
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:Y0pCki6q_DkC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8645723009457605436"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:9yKSN-GCB0IC",
+      "title": "Modélisation des applications de visualisation scientifique interactives",
+      "authors": "A Ait Wakrime, S Limet, S Robert",
+      "publication": "",
+      "year": 2013,
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:9yKSN-GCB0IC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8730177986705203182"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:u-x6o8ySG0sC",
+      "title": "Réseaux FIFO Colorés Stricts pour la formalisation des applications de visualisation scientifique interactives.",
+      "authors": "A Ait Wakrime, S Limet, S Robert",
+      "publication": "CAL, 103-122, 2012",
+      "year": 2012,
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:u-x6o8ySG0sC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4876775373504329103"
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:JV2RwH3_ST0C",
+      "title": "Optimising controller placement for SDN using self-play reinforcement learning",
+      "authors": "B Ouafae, AA Wakrime, R Benaini",
+      "publication": "International Journal of Autonomous and Adaptive Communications Systems 19 …, 2026",
+      "year": 2026,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:JV2RwH3_ST0C",
+      "cited_by_url": null
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:blknAaTinKkC",
+      "title": "Intelligent Cloud-Native DevOps for Dynamic SDN Controller Placement and Orchestration",
+      "authors": "O Benoudifa, A Ait Wakrime, S Ouchani, R Benaini",
+      "publication": "International Conference of Cloud Computing Technologies and Applications …, 2025",
+      "year": 2025,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:blknAaTinKkC",
+      "cited_by_url": null
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:k_IJM867U9cC",
+      "title": "Leveraging generative AI for enhancing SDN security",
+      "authors": "I Mellal, A Ait Wakrime, A Laouiti, K Boukir",
+      "publication": "Generative AI for Cybersecurity and Privacy, 76-100, 2025",
+      "year": 2025,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:k_IJM867U9cC",
+      "cited_by_url": null
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:RHpTSmoSYBkC",
+      "title": "Model-driven and component-based framework for scientific applications",
+      "authors": "AA Wakrime, Y Ouhammou, M Bouichou",
+      "publication": "International Journal of Modeling, Simulation, and Scientific Computing 15 …, 2024",
+      "year": 2024,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:RHpTSmoSYBkC",
+      "cited_by_url": null
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:TFP_iSt0sucC",
+      "title": "Risks and Security of Internet and Systems",
+      "authors": "A Ait Wakrime, Abderrahim/Navarro-Arribas Ait Wakrime (Guillerm), ...",
+      "publication": "",
+      "year": 2024,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:TFP_iSt0sucC",
+      "cited_by_url": null
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:_Qo2XoVZTnwC",
+      "title": "Risks and Security of Internet and Systems",
+      "authors": "AA Wakrime, G Navarro-Arribas, F Cuppens, N Boulahia Cuppens, ...",
+      "publication": "Springer, 2024",
+      "year": 2024,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:_Qo2XoVZTnwC",
+      "cited_by_url": null
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:L8Ckcad2t8MC",
+      "title": "Future internet services and applications",
+      "authors": "A Ait Wakrime, M Sellami, RB Halima",
+      "publication": "Concurrency and Computation: Practice and Experience 35 (11), 2023",
+      "year": 2023,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:L8Ckcad2t8MC",
+      "cited_by_url": null
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:mVmsd5A6BfQC",
+      "title": "Guest editorial:: Special issue on modeling, verification and testing of dependable critical systems",
+      "authors": "Y Ouhammou, A Ait Wakrime",
+      "publication": "",
+      "year": 2021,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:mVmsd5A6BfQC",
+      "cited_by_url": null
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:maZDTaKrznsC",
+      "title": "Incremental Development of a Safety Critical System Combining formal",
+      "authors": "A Idani, Y Ledru¹, A Ait Wakrime, RB Ayed, S Collart-Dutilleul",
+      "publication": "Formal Methods for Industrial Critical Systems: 24th International …, 2019",
+      "year": 2019,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:maZDTaKrznsC",
+      "cited_by_url": null
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:M3NEmzRMIkIC",
+      "title": "Verification of Infinite Loops' Absence in Event-B Models.",
+      "authors": "A Jarrar, AA Wakrime, Y Balouki",
+      "publication": "International Review on Modelling & Simulations 12 (3), 145, 2019",
+      "year": 2019,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:M3NEmzRMIkIC",
+      "cited_by_url": null
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:iH-uZ7U-co4C",
+      "title": "Mathematical Sequences Through",
+      "authors": "Z Boudi¹, A Ait Wakrime, S Collart-Dutilleul",
+      "publication": "New Trends in Model and Data Engineering: MEDI 2018 International Workshops …, 2018",
+      "year": 2018,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:iH-uZ7U-co4C",
+      "cited_by_url": null
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:Se3iqnhoufwC",
+      "title": "Deadlock-freedom of scientific applications using strict colored FIFO nets",
+      "authors": "A Ait Wakrime",
+      "publication": "2017 4th International Conference on Control, Decision and Information …, 2017",
+      "year": 2017,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:Se3iqnhoufwC",
+      "cited_by_url": null
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:j3f4tGmQtD8C",
+      "title": "A component-based approach for interactive visual analysis of numerical simulation results",
+      "authors": "A Ait Wakrime",
+      "publication": "< bound method Organization. get_name_with_acronym of< Organization: TEL …, 2015",
+      "year": 2015,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:j3f4tGmQtD8C",
+      "cited_by_url": null
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:zYLM7Y9cAGgC",
+      "title": "Ontological approach for Data WareHouse design",
+      "authors": "B Aadil, A Ait Wakrime, L Kzaz, A Sekkaki",
+      "publication": "2015 International Conference on Protocol Engineering (ICPE) and …, 2015",
+      "year": 2015,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:zYLM7Y9cAGgC",
+      "cited_by_url": null
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:UeHWp8X0CEIC",
+      "title": "Ontological approach for Data WareHouse design",
+      "authors": "A Bouchra, A Ait Wakrime, K Larbi, A Sekkaki",
+      "publication": "",
+      "year": 2015,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:UeHWp8X0CEIC",
+      "cited_by_url": null
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:KlAtU1dfN6UC",
+      "title": "WETICE 2019",
+      "authors": "H Abbas, M Abid, H Afzal, YA Ameur, A Ait Wakrime, A Alonso-Betanzos, ...",
+      "publication": "",
+      "year": null,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:KlAtU1dfN6UC",
+      "cited_by_url": null
+    },
+    {
+      "citation_id": "r0OoVlQAAAAJ:Tyk-4Ss8FVUC",
+      "title": "Deadlock-freedom of component-based approach for scientific applications",
+      "authors": "A Ait Wakrime",
+      "publication": "",
+      "year": null,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:Tyk-4Ss8FVUC",
+      "cited_by_url": null
+    }
+  ]
+}
