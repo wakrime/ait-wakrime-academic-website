@@ -10,22 +10,59 @@
     <style>
         .bib-publications {
             margin-top: 2rem;
+            padding: 2rem;
+            border: 1px solid #dce5f1;
+            border-radius: 18px;
+            background: #ffffff;
+            box-shadow: 0 8px 28px rgba(15, 40, 80, 0.06);
+            overflow-wrap: anywhere;
+        }
+
+        .bib-publications > p:first-of-type {
+            margin: 0;
             padding: 1.5rem;
-            border: 1px solid #e2e8f0;
-            border-radius: 16px;
-            background: #fff;
-            overflow-wrap: anywhere;
+            border-left: 4px solid #1769e0;
+            border-radius: 8px;
+            background: #f7faff;
+            color: #334155;
+            font-size: 1.05rem;
+            line-height: 1.9;
         }
-        .bib-publications li {
-            margin-bottom: 1.25rem;
-            line-height: 1.8;
+
+        .bib-publications > p:last-of-type {
+            display: none;
         }
+
+        .bib-publications hr {
+            display: none;
+        }
+
         .bib-publications a {
+            color: #1769e0;
+            font-weight: 600;
+            text-decoration: none;
             overflow-wrap: anywhere;
         }
+
+        .bib-publications a:hover {
+            text-decoration: underline;
+        }
+
         .bib-status {
             color: #64748b;
             margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 640px) {
+            .bib-publications {
+                padding: 1rem;
+            }
+
+            .bib-publications > p:first-of-type {
+                padding: 1rem;
+                font-size: 0.98rem;
+            }
         }
     </style>
 </head>
