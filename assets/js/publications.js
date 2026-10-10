@@ -35,7 +35,7 @@ function renderPublications() {
       <h3 class="publication-title">${esc(p.title)}</h3>
       ${p.authors ? `<p class="publication-authors">${esc(p.authors)}</p>` : ""}
       ${p.venue ? `<p class="publication-venue">${esc(p.venue)}</p>` : ""}
-      ${p.url ? `<a class="pub-link" href="${esc(p.url)}" target="_blank" rel="noopener">View publication â†—</a>` : ""}
+      ${p.url ? `<a class="pub-link" href="${esc(p.url)}" target="_blank" rel="noopener">View publication ➔</a>` : ""}
     </article>
   `).join("");
 }
