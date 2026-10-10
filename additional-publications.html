@@ -298,134 +298,194 @@
 
     <!-- ===== Publications loader ===== -->
 
-    <script>
-    (async function () {
-        const container = document.getElementById("publication-list");
+    
+<script>
+(async function () {
+    const container = document.getElementById("publication-list");
 
-        function createMeta(label) {
-            const element = document.createElement("span");
-            element.textContent = label;
-            return element;
-        }
+    function addMeta(parent, label) {
+        if (!label) return;
 
-        function createPublicationCard() {
-            const card = document.createElement("article");
-            card.className = "publication-card";
+        const element = document.createElement("span");
+        element.textContent = label;
+        parent.appendChild(element);
+    }
 
-            const icon = document.createElement("div");
-            icon.className = "publication-icon";
+    function clean(value) {
+        return String(value || "").trim();
+    }
 
-            icon.innerHTML = `
-                <svg viewBox="0 0 24 24"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="1.7"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                     aria-hidden="true">
-                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                    <path d="M14 2v6h6"/>
-                    <path d="M8 13h8"/>
-                    <path d="M8 17h8"/>
-                </svg>
-            `;
+    function formatAuthors(value) {
+        return clean(value)
+            .replace(/\s+and\s+/gi, ", ")
+            .replace(/\s*,\s*/g, ", ");
+    }
 
-            const content = document.createElement("div");
+    function createCard(publication) {
+        const card = document.createElement("article");
+        card.className = "publication-card";
 
-            const type = document.createElement("span");
-            type.className = "publication-type";
-            type.textContent = "Journal Article";
+        const icon = document.createElement("div");
+        icon.className = "publication-icon";
+        icon.innerHTML = `
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="1.7"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <path d="M14 2v6h6"/>
+                <path d="M8 13h8"/>
+                <path d="M8 17h8"/>
+            </svg>
+        `;
 
-            const title = document.createElement("h3");
-            title.className = "publication-title";
-            title.textContent =
-                "Autonomous solution for controller placement problem of software-defined networking using MuZero based intelligent agents";
+        const content = document.createElement("div");
 
-            const authors = document.createElement("p");
-            authors.className = "publication-authors";
+        const type = document.createElement("span");
+        type.className = "publication-type";
+        type.textContent = clean(publication.type)
+            .replace(/[_-]/g, " ") || "Journal Article";
 
-            authors.append(
-                document.createTextNode("Ouafae Benoudifa, ")
+        const title = document.createElement("h3");
+        title.className = "publication-title";
+        title.textContent = clean(publication.title);
+
+        const authors = document.createElement("p");
+        authors.className = "publication-authors";
+
+        const authorText = formatAuthors(publication.authors);
+        const professorName = "Abderrahim Ait Wakrime";
+
+        if (authorText.toLowerCase().includes(professorName.toLowerCase())) {
+            const parts = authorText.split(
+                new RegExp(professorName, "i")
+            );
+
+            authors.appendChild(
+                document.createTextNode(parts[0] || "")
             );
 
             const professor = document.createElement("strong");
-            professor.textContent = "Abderrahim Ait Wakrime";
+            professor.textContent = professorName;
+            authors.appendChild(professor);
 
-            authors.append(
-                professor,
-                document.createTextNode(", and Redouane Benaini.")
-            );
-
-            const journal = document.createElement("p");
-            journal.className = "publication-journal";
-            journal.textContent =
-                "Journal of King Saud University Computer and Information Sciences";
-
-            const meta = document.createElement("div");
-            meta.className = "publication-meta";
-
-            meta.append(
-                createMeta("2023"),
-                createMeta("Volume 35"),
-                createMeta("Issue 10"),
-                createMeta("Article 101842")
-            );
-
-            content.append(type, title, authors, journal, meta);
-            card.append(icon, content);
-
-            return card;
+            if (parts[1]) {
+                authors.appendChild(
+                    document.createTextNode(parts[1])
+                );
+            }
+        } else {
+            authors.textContent = authorText || "Authors not specified";
         }
 
-        try {
-            const response = await fetch(
-                "data/additional-publications.html?v=" + Date.now()
-            );
+        const journalName = clean(
+            publication.journal || publication.booktitle
+        );
 
-            if (!response.ok) {
-                throw new Error("Unable to load publications.");
+        const journal = document.createElement("p");
+        journal.className = "publication-journal";
+        journal.textContent = journalName;
+
+        const meta = document.createElement("div");
+        meta.className = "publication-meta";
+
+        addMeta(meta, clean(publication.year));
+        if (publication.volume) {
+            addMeta(meta, "Volume " + clean(publication.volume));
+        }
+        if (publication.number) {
+            addMeta(meta, "Issue " + clean(publication.number));
+        }
+        if (publication.pages) {
+            addMeta(meta, "Pages / Article " + clean(publication.pages));
+        }
+        if (publication.publisher) {
+            addMeta(meta, clean(publication.publisher));
+        }
+
+        const linkValue = clean(publication.url) ||
+            (publication.doi
+                ? "https://doi.org/" + clean(publication.doi)
+                : "");
+
+        if (linkValue) {
+            try {
+                const linkUrl = new URL(linkValue, window.location.href);
+
+                if (["https:", "http:"].includes(linkUrl.protocol)) {
+                    const link = document.createElement("a");
+                    link.href = linkUrl.href;
+                    link.target = "_blank";
+                    link.rel = "noopener noreferrer";
+                    link.textContent = "View publication";
+                    link.className = "publication-link";
+                    meta.appendChild(link);
+                }
+            } catch (_) {
+                // Ignore invalid publication links.
             }
+        }
 
-            const html = await response.text();
-            const parser = new DOMParser();
-            const parsedDocument = parser.parseFromString(
-                html,
-                "text/html"
-            );
+        content.append(type, title);
 
-            const entries = parsedDocument.querySelectorAll("p");
-            const hasPublication = Array.from(entries).some(function (entry) {
-                const text = entry.textContent.trim();
+        if (authorText) content.appendChild(authors);
+        if (journalName) content.appendChild(journal);
+        if (meta.childElementCount > 0) content.appendChild(meta);
 
-                return text &&
-                    !text.startsWith("This file was generated by");
-            });
+        card.append(icon, content);
+        return card;
+    }
 
-            container.replaceChildren();
+    try {
+        const response = await fetch(
+            "data/additional-publications.json?v=" + Date.now()
+        );
 
-            if (!hasPublication) {
-                const message = document.createElement("p");
-                message.className = "publication-status";
-                message.textContent =
-                    "Scientific publications will be displayed here.";
-                container.appendChild(message);
-                return;
-            }
+        if (!response.ok) {
+            throw new Error("Unable to load publication data.");
+        }
 
-            container.appendChild(createPublicationCard());
+        const publications = await response.json();
 
-        } catch (error) {
-            container.replaceChildren();
+        container.replaceChildren();
 
+        if (!Array.isArray(publications) || publications.length === 0) {
             const message = document.createElement("p");
             message.className = "publication-status";
             message.textContent =
-                "Scientific publications are temporarily unavailable. Please try again later.";
-
+                "No additional publications are currently available.";
             container.appendChild(message);
+            return;
         }
-    })();
-    </script>
+
+        publications
+            .filter(publication => clean(publication.title))
+            .sort((a, b) =>
+                Number(clean(b.year)) - Number(clean(a.year))
+            )
+            .forEach(publication => {
+                container.appendChild(createCard(publication));
+            });
+
+    } catch (error) {
+        console.error("Publication loading error:", error);
+
+        container.replaceChildren();
+
+        const message = document.createElement("p");
+        message.className = "publication-status";
+        message.textContent =
+            "Scientific publications are temporarily unavailable. Please try again later.";
+
+        container.appendChild(message);
+    }
+})();
+</script>
+
+
 
 </body>
 </html>
