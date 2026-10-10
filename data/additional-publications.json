@@ -1,0 +1,32 @@
+[
+  {
+    "id": "benoudifa2023autonomous",
+    "type": "article",
+    "title": "Autonomous solution for controller placement problem of software-defined networking using MuZero based intelligent agents",
+    "authors": "Benoudifa, Ouafae and Ait Wakrime, Abderrahim and Benaini, Redouane",
+    "journal": "Journal of King Saud University Computer and Information Sciences",
+    "booktitle": "",
+    "year": "2023",
+    "volume": "35",
+    "number": "10",
+    "pages": "101842",
+    "publisher": "Springer",
+    "doi": "",
+    "url": ""
+  },
+  {
+    "id": "benoudifa2025securing",
+    "type": "article",
+    "title": "Securing SDN controller placement with MuZero and blockchain-based smart contracts",
+    "authors": "Benoudifa, Ouafae and Ait Wakrime, Abderrahim and Benaini, Redouane",
+    "journal": "Journal of King Saud University Computer and Information Sciences",
+    "booktitle": "",
+    "year": "2025",
+    "volume": "37",
+    "number": "5",
+    "pages": "105",
+    "publisher": "Springer",
+    "doi": "",
+    "url": ""
+  }
+]
