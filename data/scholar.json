@@ -2,8 +2,7 @@
   "source": "Google Scholar",
   "profile_url": "https://scholar.google.com/citations?user=r0OoVlQAAAAJ&hl=en&oi=ao",
   "scholar_id": "r0OoVlQAAAAJ",
-  "last_sync": "2026-10-09T09:11:56.768Z",
-
+  "last_sync": "2026-10-10T08:35:22.419Z",
   "profile": {
     "name": "Abderrahim AIT WAKRIME",
     "affiliation": "Computer Science Department, Faculty of Sciences, Mohammed V University in Rabat, Morocco",
@@ -36,10 +35,10 @@
       }
     ],
     "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=r0OoVlQAAAAJ&citpid=2",
-    "citations": 328,
+    "citations": 329,
     "hIndex": 11,
     "i10Index": 12,
-    "citationsSince": 328
+    "citationsSince": 329
   },
   "citations_per_year": [
     {
@@ -88,7 +87,7 @@
     },
     {
       "year": 2026,
-      "citations": 29
+      "citations": 30
     }
   ],
   "public_access": null,
@@ -190,7 +189,7 @@
       "authors": "R Bougacha, A Ait Wakrime, S Kallel, RB Ayed, S Collart-Dutilleul",
       "publication": "Proceedings of the 14th International Conference on Evaluation of Novel …, 2019",
       "year": 2019,
-      "citations": 11,
+      "citations": 12,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:4TOpqqG69KYC",
       "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8827065591011882822"
     },
