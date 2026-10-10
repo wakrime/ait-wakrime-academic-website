@@ -28,20 +28,5 @@
     "publisher": "Springer",
     "doi": "",
     "url": ""
-  },
-  {
-    "id": "benoudifa2026securing",
-    "type": "article",
-    "title": "Securing SDN controller placement with MuZero and blockchain-based smart contracts",
-    "authors": "Benoudifa, Ouafae and Ait Wakrime, Abderrahim and Benaini, Redouane, KEHAL",
-    "journal": "Journal of King Saud University Computer and Information Sciences",
-    "booktitle": "",
-    "year": "2025",
-    "volume": "37",
-    "number": "5",
-    "pages": "105",
-    "publisher": "Springer",
-    "doi": "",
-    "url": ""
   }
 ]
