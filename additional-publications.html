@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Additional scientific publications by Dr. Abderrahim Ait Wakrime.">
+    <title>Additional Publications | Dr. Abderrahim Ait Wakrime</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .bib-publications {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            background: #fff;
+            overflow-wrap: anywhere;
+        }
+        .bib-publications li {
+            margin-bottom: 1.25rem;
+            line-height: 1.8;
+        }
+        .bib-publications a {
+            overflow-wrap: anywhere;
+        }
+        .bib-status {
+            color: #64748b;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+<header class="site-header">
+    <div class="container nav-wrap">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">AW</span>
+            <span>Dr. Abderrahim Ait Wakrime</span>
+        </a>
+        <button class="menu-toggle" aria-label="Open menu">☰</button>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="enseignement.html">Teaching &amp; Pedagogy</a>
+            <a href="recherche.html">Scientific Research</a>
+            <a class="active" href="additional-publications.html">Additional Publications</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow">SCIENTIFIC OUTPUT</span>
+            <h1>Additional Publications</h1>
+            <p>
+                A bibliography maintained using BibTeX and updated through
+                the academic website's GitHub repository.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">BIBLIOGRAPHY</span>
+                <h2>Selected publications</h2>
+                <p>
+                    This list is generated from the professor's BibTeX
+                    bibliography and is separate from the Google Scholar list.
+                </p>
+            </div>
+
+            <div id="bib-publications" class="bib-publications">
+                <p>Loading publications...</p>
+            </div>
+            <p id="bib-status" class="bib-status"></p>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© Dr. Abderrahim Ait Wakrime</p>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+(async function () {
+    const target = document.getElementById("bib-publications");
+    const status = document.getElementById("bib-status");
+
+    try {
+        const response = await fetch("data/additional-publications.html?v=" + Date.now());
+        if (!response.ok) {
+            throw new Error("Generated bibliography is not available yet.");
+        }
+
+        target.innerHTML = await response.text();
+
+        if (!target.textContent.trim()) {
+            target.innerHTML = "<p>No additional publications have been added yet.</p>";
+        }
+    } catch (error) {
+        target.innerHTML =
+            "<p>The bibliography has not been generated yet. Please try again later.</p>";
+        status.textContent =
+            "The bibliography will appear here after the GitHub publication workflow completes.";
+    }
+})();
+</script>
+</body>
+</html>

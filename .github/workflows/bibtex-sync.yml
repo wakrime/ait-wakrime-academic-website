@@ -1,0 +1,55 @@
+
+name: Generate Additional Publications
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "publications.bib"
+      - ".github/workflows/bibtex-sync.yml"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-bibliography:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install BibTeX2HTML
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y bibtex2html
+
+      - name: Generate HTML bibliography
+        run: |
+          mkdir -p data
+          bibtex2html \
+            -nodoc \
+            -noheader \
+            -nobibsource \
+            -noabstract \
+            -nokeys \
+            -charset utf-8 \
+            -o data/additional-publications \
+            publications.bib
+
+      - name: Commit generated bibliography
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/additional-publications.html
+
+          if git diff --cached --quiet; then
+            echo "No bibliography changes to commit."
+          else
+            git commit -m "Update additional publications bibliography"
+            git push
+          fi
