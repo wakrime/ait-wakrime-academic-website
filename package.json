@@ -3,6 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "sync-scholar": "node scripts/sync-scholar.mjs"
+    "sync-scholar": "node scripts/sync-scholar.mjs",
+    "generate-additional-publications": "node scripts/generate-additional-publications.mjs"
+  },
+  "dependencies": {
+    "bibtex-parse-js": "^0.0.24"
   }
 }
