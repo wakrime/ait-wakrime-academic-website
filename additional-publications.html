@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,329 +6,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Scientific publications by Dr. Abderrahim Ait Wakrime, including research in software-defined networking and intelligent systems.">
-
-    <meta name="author" content="Dr. Abderrahim Ait Wakrime">
+          content="Scientific publications by Dr. Abderrahim Ait Wakrime.">
 
     <title>Publications | Dr. Abderrahim Ait Wakrime</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
-        :root {
-            --pub-blue: #1769e0;
-            --pub-dark: #102747;
-            --pub-text: #334155;
-            --pub-muted: #64748b;
-            --pub-border: #dce5f1;
-            --pub-light: #f4f8ff;
-        }
-
-        .publications-hero {
-            position: relative;
-            overflow: hidden;
-            padding: 72px 0 76px;
-            color: #fff;
-            background: linear-gradient(120deg, #12396f, #1769c9);
-        }
-
-        .publications-hero::after {
-            content: "";
-            position: absolute;
-            width: 360px;
-            height: 360px;
-            right: 5%;
-            top: -180px;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 50%;
-            box-shadow:
-                0 0 0 35px rgba(255, 255, 255, 0.035),
-                0 0 0 75px rgba(255, 255, 255, 0.025);
-            pointer-events: none;
-        }
-
-        .publications-hero .container {
-            position: relative;
-            z-index: 1;
-        }
-
-        .publications-hero .eyebrow {
-            color: #c8e1ff;
-        }
-
-        .publications-hero h1 {
-            margin: 14px 0;
-            color: #fff;
-            font-size: clamp(2.4rem, 5vw, 3.5rem);
-            line-height: 1.12;
-        }
-
-        .publications-hero p {
-            max-width: 720px;
-            margin: 0;
-            color: #edf5ff;
-            font-size: 1.08rem;
-            line-height: 1.85;
-        }
-
         .publications-section {
-            padding-top: 64px;
-            padding-bottom: 72px;
+            padding: 70px 0 90px;
         }
 
         .publications-intro {
-            margin-bottom: 30px;
+            max-width: 760px;
+            margin-bottom: 42px;
         }
 
-        .publications-intro h2 {
-            margin: 10px 0 12px;
-            color: var(--pub-dark);
-            font-size: clamp(1.8rem, 3vw, 2.35rem);
+        .publications-intro h1 {
+            margin: 12px 0 18px;
+            color: #102744;
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.2;
         }
 
         .publications-intro p {
-            max-width: 760px;
-            color: var(--pub-muted);
+            color: #64748b;
+            font-size: 1.05rem;
             line-height: 1.8;
         }
 
         .publication-list {
             display: grid;
-            gap: 22px;
+            gap: 24px;
         }
 
         .publication-card {
-            position: relative;
             display: grid;
-            grid-template-columns: 58px minmax(0, 1fr);
-            gap: 22px;
-            padding: 28px;
-            overflow: hidden;
-            border: 1px solid var(--pub-border);
-            border-radius: 16px;
-            background: #fff;
+            grid-template-columns: 64px minmax(0, 1fr);
+            gap: 24px;
+            padding: 30px;
+            background: #ffffff;
+            border: 1px solid #e1e8f2;
+            border-radius: 18px;
             box-shadow: 0 8px 28px rgba(15, 40, 80, 0.045);
-            transition:
-                transform 0.2s ease,
-                box-shadow 0.2s ease,
-                border-color 0.2s ease;
-        }
-
-        .publication-card::before {
-            content: "";
-            position: absolute;
-            inset: 0 auto 0 0;
-            width: 4px;
-            background: var(--pub-blue);
+            transition: transform 0.2s ease,
+                        box-shadow 0.2s ease,
+                        border-color 0.2s ease;
         }
 
         .publication-card:hover {
             transform: translateY(-3px);
-            border-color: #bfd5f7;
+            border-color: #b8d1ff;
             box-shadow: 0 14px 34px rgba(15, 40, 80, 0.09);
         }
 
         .publication-icon {
             display: flex;
-            width: 58px;
-            height: 58px;
             align-items: center;
             justify-content: center;
-            border-radius: 13px;
-            color: var(--pub-blue);
-            background: #eaf2ff;
+            width: 64px;
+            height: 64px;
+            color: #1769e0;
+            background: #edf4ff;
+            border-radius: 15px;
         }
 
         .publication-icon svg {
-            width: 28px;
-            height: 28px;
+            width: 30px;
+            height: 30px;
         }
 
-        .publication-content {
-            min-width: 0;
-        }
-
-        .publication-heading {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 18px;
+        .publication-type {
+            display: inline-block;
+            margin-bottom: 12px;
+            padding: 6px 11px;
+            color: #1769e0;
+            background: #edf4ff;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
         }
 
         .publication-title {
-            margin: 2px 0 12px;
-            color: var(--pub-dark);
-            font-size: 1.17rem;
-            font-weight: 750;
+            margin: 0 0 14px;
+            color: #102744;
+            font-size: 1.2rem;
+            font-weight: 700;
             line-height: 1.65;
         }
 
-        .publication-year {
-            flex-shrink: 0;
-            display: inline-flex;
-            align-items: center;
-            gap: 7px;
-            padding: 7px 12px;
-            border-radius: 30px;
-            color: #1554a5;
-            background: #eaf2ff;
-            font-size: 0.88rem;
-            font-weight: 700;
-        }
-
         .publication-authors {
-            margin: 0 0 8px;
-            color: #526b8e;
-            line-height: 1.8;
-        }
-
-        .publication-venue {
-            margin: 0;
-            color: var(--pub-muted);
+            margin: 0 0 14px;
+            color: #475569;
             font-size: 0.97rem;
             line-height: 1.8;
         }
 
-        .publication-links {
+        .publication-authors strong {
+            color: #1769e0;
+            font-weight: 700;
+        }
+
+        .publication-journal {
+            margin: 0 0 20px;
+            color: #64748b;
+            font-size: 0.96rem;
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        .publication-meta {
             display: flex;
             flex-wrap: wrap;
-            gap: 16px;
-            margin-top: 18px;
-            padding-top: 16px;
-            border-top: 1px solid #e8eef7;
+            align-items: center;
+            gap: 10px;
+            padding-top: 18px;
+            border-top: 1px solid #edf1f7;
         }
 
-        .publication-links a {
+        .publication-meta span {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            color: var(--pub-blue);
-            font-size: 0.94rem;
-            font-weight: 650;
-            text-decoration: none;
+            gap: 7px;
+            padding: 7px 11px;
+            color: #334155;
+            background: #f5f7fb;
+            border-radius: 7px;
+            font-size: 0.85rem;
+            font-weight: 600;
         }
 
-        .publication-links a:hover {
-            text-decoration: underline;
+        .publication-meta svg {
+            width: 16px;
+            height: 16px;
+            color: #1769e0;
         }
 
-        .publication-links svg {
-            width: 17px;
-            height: 17px;
+        .publication-status {
+            color: #64748b;
+            line-height: 1.7;
         }
 
-        .publications-notice {
-            display: flex;
-            align-items: flex-start;
-            gap: 13px;
-            margin-top: 26px;
-            padding: 18px 20px;
-            border: 1px solid #d4e5ff;
-            border-radius: 12px;
-            color: #45648e;
-            background: var(--pub-light);
-            line-height: 1.8;
-        }
-
-        .publications-notice svg {
-            flex-shrink: 0;
-            width: 21px;
-            height: 21px;
-            margin-top: 2px;
-            color: var(--pub-blue);
-        }
-
-        .publications-notice p {
-            margin: 0;
-        }
-
-        .publication-empty {
-            padding: 30px;
-            border: 1px dashed var(--pub-border);
-            border-radius: 14px;
-            color: var(--pub-muted);
-            background: #fafcff;
-            text-align: center;
-            line-height: 1.8;
-        }
-
-        .publication-empty strong {
-            display: block;
-            margin-bottom: 7px;
-            color: var(--pub-dark);
-        }
-
-        /* Clean presentation of generated bibliography HTML */
-        .generated-bibliography {
-            color: var(--pub-text);
-            line-height: 1.8;
-            overflow-wrap: anywhere;
-        }
-
-        .generated-bibliography p {
-            margin: 0 0 18px;
-            padding: 20px;
-            border: 1px solid var(--pub-border);
-            border-left: 4px solid var(--pub-blue);
-            border-radius: 12px;
-            background: #fff;
-        }
-
-        .generated-bibliography hr {
-            display: none;
-        }
-
-        .generated-bibliography a {
-            color: var(--pub-blue);
-            overflow-wrap: anywhere;
-        }
-
-        .generated-bibliography > p:last-child {
-            display: none;
-        }
-
-        @media (max-width: 700px) {
-            .publications-hero {
-                padding: 52px 0;
-            }
-
+        @media (max-width: 640px) {
             .publications-section {
-                padding-top: 42px;
-                padding-bottom: 48px;
+                padding: 45px 0 60px;
             }
 
             .publication-card {
                 grid-template-columns: 1fr;
-                gap: 16px;
+                gap: 18px;
                 padding: 22px;
             }
 
             .publication-icon {
-                width: 48px;
-                height: 48px;
-            }
-
-            .publication-heading {
-                flex-direction: column;
-                gap: 8px;
+                width: 52px;
+                height: 52px;
             }
 
             .publication-title {
-                font-size: 1.06rem;
-            }
-
-            .publications-notice {
-                padding: 15px;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .publication-card {
-                transition: none;
-            }
-
-            .publication-card:hover {
-                transform: none;
+                font-size: 1.08rem;
             }
         }
     </style>
@@ -344,18 +182,13 @@
             <span>Dr. Abderrahim Ait Wakrime</span>
         </a>
 
-        <button class="menu-toggle"
-                type="button"
-                aria-label="Open menu"
-                aria-expanded="false">&#9776;</button>
+        <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
 
-        <nav class="nav" aria-label="Main navigation">
+        <nav class="nav">
             <a href="index.html">Home</a>
             <a href="enseignement.html">Teaching &amp; Pedagogy</a>
             <a href="recherche.html">Scientific Research</a>
-            <a class="active"
-               href="additional-publications.html"
-               aria-current="page">Publications</a>
+            <a class="active" href="additional-publications.html">Publications</a>
             <a href="contact.html">Contact</a>
         </nav>
 
@@ -363,64 +196,29 @@
 </header>
 
 <main>
-
-    <section class="publications-hero">
-        <div class="container">
-            <span class="eyebrow">SCIENTIFIC OUTPUT</span>
-
-            <h1>Publications</h1>
-
-            <p>
-                Explore scientific contributions and research publications
-                by Dr. Abderrahim Ait Wakrime in computer science,
-                networking and intelligent systems.
-            </p>
-        </div>
-    </section>
-
-    <section class="section publications-section">
+    <section class="publications-section">
         <div class="container">
 
             <div class="publications-intro">
-                <span class="eyebrow">RESEARCH &amp; CONTRIBUTIONS</span>
+                <span class="eyebrow">SCIENTIFIC RESEARCH</span>
 
-                <h2>Selected Publications</h2>
+                <h1>Scientific Publications</h1>
 
                 <p>
-                    A selection of scientific works, research contributions
-                    and publications authored or co-authored by the professor.
+                    Explore the scientific contributions of Dr. Abderrahim
+                    Ait Wakrime in computer science, intelligent systems
+                    and software-defined networking.
                 </p>
             </div>
 
-            <div id="bib-publications" class="publication-list"
-                 aria-live="polite">
-
-                <div class="publication-empty">
-                    Loading publications...
-                </div>
-
-            </div>
-
-            <div class="publications-notice">
-                <svg viewBox="0 0 24 24" fill="none"
-                     stroke="currentColor" stroke-width="2"
-                     aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <path d="M12 11v5"></path>
-                    <path d="M12 7h.01"></path>
-                </svg>
-
-                <p>
-                    This list is updated as new scientific publications
-                    become available.
+            <div id="publication-list" class="publication-list">
+                <p class="publication-status">
+                    Loading scientific publications...
                 </p>
             </div>
-
-            <p id="bib-status" class="bib-status" role="status"></p>
 
         </div>
     </section>
-
 </main>
 
 <footer class="site-footer">
@@ -433,42 +231,7 @@
 
 <script>
 (async function () {
-    const target = document.getElementById("bib-publications");
-    const status = document.getElementById("bib-status");
-
-    function createPublicationCard(paragraph) {
-        const card = document.createElement("article");
-        card.className = "publication-card";
-
-        const icon = document.createElement("div");
-        icon.className = "publication-icon";
-        icon.setAttribute("aria-hidden", "true");
-        icon.innerHTML = `
-            <svg viewBox="0 0 24 24" fill="none"
-                 stroke="currentColor" stroke-width="1.8"
-                 stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <path d="M14 2v6h6"></path>
-                <path d="M8 13h8M8 17h8"></path>
-            </svg>`;
-
-        const content = document.createElement("div");
-        content.className = "publication-content";
-
-        const cleanText = paragraph.textContent
-            .replace(/\s+/g, " ")
-            .trim();
-
-        const title = document.createElement("h3");
-        title.className = "publication-title";
-        title.textContent = cleanText || "Scientific publication";
-
-        content.appendChild(title);
-        card.appendChild(icon);
-        card.appendChild(content);
-
-        return card;
-    }
+    const container = document.getElementById("publication-list");
 
     try {
         const response = await fetch(
@@ -476,51 +239,110 @@
         );
 
         if (!response.ok) {
-            throw new Error("Publications are currently unavailable.");
+            throw new Error("Publications could not be loaded.");
         }
 
-        const rawHtml = await response.text();
+        const html = await response.text();
+        const documentParser = new DOMParser();
+        const bibliography = documentParser.parseFromString(
+            html,
+            "text/html"
+        );
 
-        const parser = new DOMParser();
-        const documentHtml = parser.parseFromString(rawHtml, "text/html");
+        const entries = bibliography.querySelectorAll("p");
 
-        const paragraphs = Array.from(
-            documentHtml.querySelectorAll("p")
-        ).filter(paragraph => {
-            const text = paragraph.textContent.trim();
+        container.innerHTML = "";
 
-            return text.length > 0 &&
-                !text.toLowerCase().includes("this file was generated by");
+        entries.forEach(function (entry) {
+            const clone = entry.cloneNode(true);
+
+            clone.querySelectorAll("a[name]").forEach(function (anchor) {
+                anchor.remove();
+            });
+
+            const titleText = clone.textContent.trim();
+
+            if (
+                !titleText ||
+                titleText.startsWith("This file was generated by")
+            ) {
+                return;
+            }
+
+            const card = document.createElement("article");
+            card.className = "publication-card";
+
+            const icon = document.createElement("div");
+            icon.className = "publication-icon";
+            icon.innerHTML = `
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.7"
+                     stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <path d="M14 2v6h6"/>
+                    <path d="M8 13h8"/>
+                    <path d="M8 17h8"/>
+                </svg>
+            `;
+
+            const content = document.createElement("div");
+
+            const type = document.createElement("span");
+            type.className = "publication-type";
+            type.textContent = "Journal Article";
+
+            const title = document.createElement("h2");
+            title.className = "publication-title";
+            title.textContent =
+                "Autonomous solution for controller placement problem of software-defined networking using MuZero based intelligent agents";
+
+            const authors = document.createElement("p");
+            authors.className = "publication-authors";
+            authors.innerHTML =
+                'Ouafae Benoudifa, <strong>Abderrahim Ait Wakrime</strong>, and Redouane Benaini';
+
+            const journal = document.createElement("p");
+            journal.className = "publication-journal";
+            journal.textContent =
+                "Journal of King Saud University Computer and Information Sciences";
+
+            const meta = document.createElement("div");
+            meta.className = "publication-meta";
+
+            meta.innerHTML = `
+                <span>
+                    <svg viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round"
+                         aria-hidden="true">
+                        <rect x="3" y="4" width="18" height="17" rx="2"/>
+                        <path d="M16 2v4M8 2v4M3 10h18"/>
+                    </svg>
+                    2023
+                </span>
+                <span>Volume 35</span>
+                <span>Issue 10</span>
+                <span>Article 101842</span>
+            `;
+
+            content.append(type, title, authors, journal, meta);
+            card.append(icon, content);
+            container.appendChild(card);
         });
 
-        target.replaceChildren();
-
-        if (paragraphs.length === 0) {
-            target.innerHTML = `
-                <div class="publication-empty">
-                    <strong>No publications available yet</strong>
-                    New publications will appear here when they are added.
-                </div>`;
-            return;
+        if (!container.children.length) {
+            container.innerHTML =
+                '<p class="publication-status">No publications are currently available.</p>';
         }
-
-        paragraphs.forEach(paragraph => {
-            target.appendChild(createPublicationCard(paragraph));
-        });
 
     } catch (error) {
-        target.innerHTML = `
-            <div class="publication-empty">
-                <strong>Publications are temporarily unavailable</strong>
-                Please try again later.
-            </div>`;
-
-        status.textContent =
-            "The publication list could not be loaded at this time.";
-        console.error("Publication loading error:", error);
+        container.innerHTML =
+            '<p class="publication-status">Scientific publications are temporarily unavailable. Please try again later.</p>';
     }
 })();
 </script>
 
 </body>
 </html>
+```
