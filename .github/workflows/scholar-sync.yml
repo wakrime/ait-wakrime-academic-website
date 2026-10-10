@@ -1,4 +1,5 @@
-name: Sync Google Scholar
+
+name: Sync Publications
 
 on:
   workflow_dispatch:
@@ -6,38 +7,57 @@ on:
   schedule:
     - cron: "17 2 * * *"
 
+  push:
+    branches:
+      - main
+    paths:
+      - publications.bib
+      - package.json
+      - package-lock.json
+      - scripts/generate-additional-publications.mjs
+      - .github/workflows/scholar-sync.yml
+
 permissions:
   contents: write
 
 jobs:
-  sync-scholar:
+  update-publications:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
 
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Generate additional publications from BibTeX
+        run: npm run generate-additional-publications
+
       - name: Synchronize Google Scholar
+        if: github.event_name != 'push'
         env:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
           SCHOLAR_ID: r0OoVlQAAAAJ
         run: node scripts/sync-scholar.mjs
 
-      - name: Commit updated Scholar data
+      - name: Commit updated publication data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/scholar.json
+          git add data/additional-publications.json data/scholar.json
 
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Update Google Scholar publications"
-            git push
+            git commit -m "Update academic publications"
+            git push origin HEAD:main
           fi
