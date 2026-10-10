@@ -1,4 +1,4 @@
-const SCHOLAR_DATA_URL = "data/scholar.json";
+﻿const SCHOLAR_DATA_URL = "data/scholar.json";
 let allPublications = [];
 
 const esc = (value) => String(value ?? "").replace(/[&<>"']/g, ch => ({
@@ -30,13 +30,12 @@ function renderPublications() {
   list.innerHTML = filtered.map(p => `
     <article class="publication-card">
       <div class="publication-meta">
-        <span class="publication-year">${esc(p.year || "—")}</span>
-        <span class="citation-badge">${p.citations != null ? `${esc(p.citations)} citations` : ""}</span>
-      </div>
+        <span class="publication-year">${esc(p.year || "â€”")}</span>
+</div>
       <h3 class="publication-title">${esc(p.title)}</h3>
       ${p.authors ? `<p class="publication-authors">${esc(p.authors)}</p>` : ""}
       ${p.venue ? `<p class="publication-venue">${esc(p.venue)}</p>` : ""}
-      ${p.url ? `<a class="pub-link" href="${esc(p.url)}" target="_blank" rel="noopener">View publication ↗</a>` : ""}
+      ${p.url ? `<a class="pub-link" href="${esc(p.url)}" target="_blank" rel="noopener">View publication â†—</a>` : ""}
     </article>
   `).join("");
 }
@@ -89,3 +88,4 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("publication-year")?.addEventListener("change", renderPublications);
   loadScholarData();
 });
+
