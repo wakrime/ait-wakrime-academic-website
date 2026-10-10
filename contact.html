@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +6,230 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Contact and academic information for Dr. Abderrahim Ait Wakrime.">
+          content="Academic contact details and professional profile of Dr. Abderrahim Ait Wakrime.">
 
     <title>Contact | Dr. Abderrahim Ait Wakrime</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Contact page */
+        .contact-hero {
+            padding: 76px 0 68px;
+        }
+
+        .contact-hero h1 {
+            margin-bottom: 18px;
+        }
+
+        .contact-hero p {
+            max-width: 680px;
+        }
+
+        .contact-section {
+            padding-top: 64px;
+            padding-bottom: 76px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 28px;
+            align-items: stretch;
+        }
+
+        .contact-card {
+            padding: 34px;
+            border: 1px solid #dce5f1;
+            border-radius: 18px;
+            background: #ffffff;
+            box-shadow: 0 8px 30px rgba(15, 40, 80, 0.045);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 36px rgba(15, 40, 80, 0.08);
+        }
+
+        .contact-label {
+            display: inline-block;
+            margin-bottom: 18px;
+            color: #1769e0;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .contact-card h2 {
+            margin: 0 0 22px;
+            font-size: clamp(1.55rem, 2.5vw, 2rem);
+            line-height: 1.25;
+        }
+
+        .contact-person {
+            margin-bottom: 22px;
+            color: #10233f;
+            font-size: 1.08rem;
+            font-weight: 700;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-top: 22px;
+        }
+
+        .contact-detail-icon {
+            display: flex;
+            flex: 0 0 42px;
+            width: 42px;
+            height: 42px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: #edf4ff;
+            color: #1769e0;
+            font-size: 1.15rem;
+            font-weight: 700;
+        }
+
+        .contact-detail-content {
+            min-width: 0;
+        }
+
+        .contact-detail-content strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #10233f;
+        }
+
+        .contact-detail-content p {
+            margin: 0;
+            color: #5c6b80;
+            line-height: 1.8;
+        }
+
+        .contact-detail-content a {
+            color: #1769e0;
+            font-weight: 600;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-detail-content a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-linkedin {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .linkedin-mark {
+            display: flex;
+            width: 54px;
+            height: 54px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            border-radius: 15px;
+            background: #edf4ff;
+            color: #1769e0;
+            font-size: 1.4rem;
+            font-weight: 800;
+        }
+
+        .contact-linkedin > p {
+            margin-bottom: 26px;
+            color: #5c6b80;
+            line-height: 1.85;
+        }
+
+        .contact-linkedin .btn {
+            margin-top: auto;
+        }
+
+        .contact-profile {
+            margin-top: 28px;
+            padding: 36px;
+            border: 1px solid #dce5f1;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #f7faff 0%, #ffffff 75%);
+        }
+
+        .profile-heading {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 18px;
+        }
+
+        .profile-accent {
+            flex: 0 0 5px;
+            align-self: stretch;
+            min-height: 52px;
+            border-radius: 5px;
+            background: #1769e0;
+        }
+
+        .profile-heading h2 {
+            margin: 0;
+            font-size: 1.65rem;
+        }
+
+        .contact-profile p {
+            max-width: 900px;
+            color: #53647a;
+            line-height: 1.9;
+        }
+
+        .contact-profile p:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 760px) {
+            .contact-hero {
+                padding: 54px 0 46px;
+            }
+
+            .contact-section {
+                padding-top: 38px;
+                padding-bottom: 48px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .contact-card {
+                padding: 26px 22px;
+            }
+
+            .contact-profile {
+                margin-top: 20px;
+                padding: 26px 22px;
+            }
+
+            .profile-heading h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .contact-card {
+                transition: none;
+            }
+
+            .contact-card:hover {
+                transform: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -30,98 +250,112 @@
             <a href="index.html">Home</a>
             <a href="enseignement.html">Teaching &amp; Pedagogy</a>
             <a href="recherche.html">Scientific Research</a>
-            <a href="additional-publications.html">Publications</a><a class="active" href="contact.html">Contact</a>
+            <a href="additional-publications.html">Publications</a>
+            <a class="active" href="contact.html">Contact</a>
         </nav>
 
     </div>
 </header>
 
-
 <main>
 
-    <!-- Page introduction -->
-    <section class="page-hero">
+    <section class="page-hero contact-hero">
         <div class="container">
-
-            <span class="eyebrow">CONTACT</span>
+            <span class="eyebrow">GET IN TOUCH</span>
 
             <h1>Contact</h1>
 
             <p>
-                Academic and professional information for Dr. Abderrahim Ait Wakrime.
+                For academic inquiries, research collaboration, and
+                professional communication, please use the contact
+                information below.
             </p>
-
         </div>
     </section>
 
-
-    <!-- Contact information -->
-    <section class="section">
+    <section class="section contact-section">
         <div class="container">
 
-            <div class="cards-2">
+            <div class="contact-grid">
 
-    <!-- Academic contact -->
-    <div class="info-card">
+                <!-- Academic contact -->
+                <article class="contact-card">
 
-        <span class="icon">ACADEMIC CONTACT</span>
+                    <span class="contact-label">Academic Contact</span>
 
-        <h2>Contact Information</h2>
+                    <h2>Contact Information</h2>
 
-        <p>
-            <strong>Dr. Abderrahim Ait Wakrime</strong>
-        </p>
+                    <p class="contact-person">
+                        Dr. Abderrahim Ait Wakrime
+                    </p>
 
-        <p>
-            Computer Science Department<br>
-            Faculty of Sciences<br>
-            Mohammed V University in Rabat<br>
-            Morocco
-        </p>
+                    <div class="contact-detail">
+                        <span class="contact-detail-icon"
+                              aria-hidden="true">&#127979;</span>
 
-        <p>
-            <strong>Email:</strong><br>
-            <a href="mailto:a.aitwakrime@um5r.ac.ma">
-                a.aitwakrime@um5r.ac.ma
-            </a>
-        </p>
+                        <div class="contact-detail-content">
+                            <strong>Institution</strong>
+                            <p>
+                                Computer Science Department<br>
+                                Faculty of Sciences<br>
+                                Mohammed V University in Rabat<br>
+                                Morocco
+                            </p>
+                        </div>
+                    </div>
 
-    </div>
+                    <div class="contact-detail">
+                        <span class="contact-detail-icon"
+                              aria-hidden="true">&#9993;</span>
 
+                        <div class="contact-detail-content">
+                            <strong>Email Address</strong>
+                            <a href="mailto:a.aitwakrime@um5r.ac.ma">
+                                a.aitwakrime@um5r.ac.ma
+                            </a>
+                        </div>
+                    </div>
 
-    <!-- Professional profile -->
-    <div class="info-card">
+                </article>
 
-        <span class="icon">PROFESSIONAL PROFILE</span>
+                <!-- LinkedIn -->
+                <article class="contact-card contact-linkedin">
 
-        <h2>LinkedIn</h2>
+                    <span class="contact-label">Professional Network</span>
 
-        <p>
-            Visit the professional LinkedIn profile of
-            Dr. Abderrahim Ait Wakrime.
-        </p>
+                    <div class="linkedin-mark" aria-hidden="true">in</div>
 
-        <a
-            class="btn btn-primary"
-            href="https://www.linkedin.com/in/aitwakrime/"
-            target="_blank"
-            rel="noopener noreferrer">
-            View LinkedIn Profile
-        </a>
+                    <h2>Connect on LinkedIn</h2>
 
-    </div>
+                    <p>
+                        Visit the professional profile of Dr. Abderrahim
+                        Ait Wakrime to explore his academic background,
+                        professional experience, and research activities.
+                    </p>
 
-</div>
+                    <a
+                        class="btn btn-primary"
+                        href="https://www.linkedin.com/in/aitwakrime/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        View LinkedIn Profile &#8599;
+                    </a>
+
+                </article>
 
             </div>
 
-
             <!-- Professional profile -->
-            <div class="info-card contact-profile">
+            <section class="contact-profile"
+                     aria-labelledby="profile-title">
 
-                <span class="icon">PROFESSIONAL PROFILE</span>
-
-                <h2>Professional Information</h2>
+                <div class="profile-heading">
+                    <span class="profile-accent" aria-hidden="true"></span>
+                    <div>
+                        <span class="contact-label">Academic Profile</span>
+                        <h2 id="profile-title">Professional Information</h2>
+                    </div>
+                </div>
 
                 <p>
                     Dr. Abderrahim Ait Wakrime is an Associate Professor
@@ -135,23 +369,22 @@
                     and development projects.
                 </p>
 
-            </div>
+            </section>
 
         </div>
     </section>
 
 </main>
 
-
 <footer class="footer">
     <div class="container">
-        <span>Â© 2026 Dr. Abderrahim Ait Wakrime</span>
+        <span>&copy; 2026 Dr. Abderrahim Ait Wakrime</span>
         <span>Academic Website</span>
     </div>
 </footer>
-
 
 <script src="assets/js/main.js"></script>
 
 </body>
 </html>
+```
