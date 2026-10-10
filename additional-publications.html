@@ -5,32 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Scientific publications by Dr. Abderrahim Ait Wakrime.">
+          content="Scientific publications by Dr. Abderrahim Ait Wakrime in computer science and intelligent systems.">
 
-    <title>Publications | Dr. Abderrahim Ait Wakrime</title>
+    <title>Scientific Publications | Dr. Abderrahim Ait Wakrime</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
-        .publications-section {
-            padding: 70px 0 90px;
+        /* ===== Blue hero banner ===== */
+
+        .publication-hero {
+            background: linear-gradient(125deg, #0b3d91 0%, #1769e0 58%, #438df5 100%);
+            padding: 76px 0;
+            color: #ffffff;
         }
 
-        .publications-intro {
+        .publication-hero .eyebrow,
+        .publication-hero h1,
+        .publication-hero p {
+            color: #ffffff;
+        }
+
+        .publication-hero .eyebrow {
+            letter-spacing: 0.13em;
+            font-weight: 700;
+            opacity: 0.9;
+        }
+
+        .publication-hero h1 {
+            margin: 14px 0 18px;
+            max-width: 850px;
+            font-size: clamp(2.2rem, 5vw, 3.4rem);
+            line-height: 1.15;
+        }
+
+        .publication-hero p {
             max-width: 760px;
-            margin-bottom: 42px;
+            margin: 0;
+            font-size: 1.08rem;
+            line-height: 1.9;
+            opacity: 0.94;
         }
 
-        .publications-intro h1 {
-            margin: 12px 0 18px;
+        /* ===== Publications section ===== */
+
+        .publications-section {
+            padding: 66px 0 90px;
+            background: #f8faff;
+        }
+
+        .publications-heading {
+            margin-bottom: 34px;
+        }
+
+        .publications-heading h2 {
+            margin: 10px 0 12px;
             color: #102744;
-            font-size: clamp(2rem, 4vw, 3rem);
-            line-height: 1.2;
+            font-size: clamp(1.65rem, 3vw, 2.2rem);
         }
 
-        .publications-intro p {
+        .publications-heading p {
+            max-width: 760px;
             color: #64748b;
-            font-size: 1.05rem;
             line-height: 1.8;
         }
 
@@ -39,15 +75,18 @@
             gap: 24px;
         }
 
+        /* ===== Individual publication card ===== */
+
         .publication-card {
             display: grid;
-            grid-template-columns: 64px minmax(0, 1fr);
+            grid-template-columns: 62px minmax(0, 1fr);
             gap: 24px;
             padding: 30px;
             background: #ffffff;
-            border: 1px solid #e1e8f2;
-            border-radius: 18px;
-            box-shadow: 0 8px 28px rgba(15, 40, 80, 0.045);
+            border: 1px solid #e0e8f4;
+            border-left: 4px solid #1769e0;
+            border-radius: 15px;
+            box-shadow: 0 8px 28px rgba(16, 39, 68, 0.045);
             transition: transform 0.2s ease,
                         box-shadow 0.2s ease,
                         border-color 0.2s ease;
@@ -55,51 +94,52 @@
 
         .publication-card:hover {
             transform: translateY(-3px);
-            border-color: #b8d1ff;
-            box-shadow: 0 14px 34px rgba(15, 40, 80, 0.09);
+            border-color: #c3d8fa;
+            box-shadow: 0 15px 34px rgba(16, 39, 68, 0.09);
         }
 
         .publication-icon {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 64px;
-            height: 64px;
+            width: 62px;
+            height: 62px;
             color: #1769e0;
             background: #edf4ff;
-            border-radius: 15px;
+            border-radius: 14px;
         }
 
         .publication-icon svg {
-            width: 30px;
-            height: 30px;
+            width: 29px;
+            height: 29px;
         }
 
         .publication-type {
             display: inline-block;
-            margin-bottom: 12px;
-            padding: 6px 11px;
+            margin-bottom: 13px;
+            padding: 6px 10px;
             color: #1769e0;
             background: #edf4ff;
-            border-radius: 6px;
-            font-size: 0.75rem;
+            border-radius: 5px;
+            font-size: 0.73rem;
             font-weight: 700;
             letter-spacing: 0.07em;
             text-transform: uppercase;
         }
 
         .publication-title {
-            margin: 0 0 14px;
+            margin: 0 0 16px;
             color: #102744;
-            font-size: 1.2rem;
+            font-size: 1.18rem;
             font-weight: 700;
-            line-height: 1.65;
+            line-height: 1.7;
+            overflow-wrap: anywhere;
         }
 
         .publication-authors {
-            margin: 0 0 14px;
+            margin: 0 0 13px;
             color: #475569;
-            font-size: 0.97rem;
+            font-size: 0.96rem;
             line-height: 1.8;
         }
 
@@ -119,38 +159,41 @@
         .publication-meta {
             display: flex;
             flex-wrap: wrap;
-            align-items: center;
             gap: 10px;
             padding-top: 18px;
-            border-top: 1px solid #edf1f7;
+            border-top: 1px solid #e9eef6;
         }
 
         .publication-meta span {
             display: inline-flex;
             align-items: center;
-            gap: 7px;
             padding: 7px 11px;
             color: #334155;
-            background: #f5f7fb;
-            border-radius: 7px;
-            font-size: 0.85rem;
+            background: #f3f6fb;
+            border: 1px solid #e8edf5;
+            border-radius: 6px;
+            font-size: 0.84rem;
             font-weight: 600;
         }
 
-        .publication-meta svg {
-            width: 16px;
-            height: 16px;
-            color: #1769e0;
+        .publication-status {
+            padding: 22px;
+            color: #64748b;
+            background: #ffffff;
+            border: 1px solid #e0e8f4;
+            border-radius: 12px;
+            line-height: 1.8;
         }
 
-        .publication-status {
-            color: #64748b;
-            line-height: 1.7;
-        }
+        /* ===== Responsive layout ===== */
 
         @media (max-width: 640px) {
+            .publication-hero {
+                padding: 50px 0;
+            }
+
             .publications-section {
-                padding: 45px 0 60px;
+                padding: 44px 0 60px;
             }
 
             .publication-card {
@@ -165,7 +208,8 @@
             }
 
             .publication-title {
-                font-size: 1.08rem;
+                font-size: 1.05rem;
+                line-height: 1.65;
             }
         }
     </style>
@@ -173,110 +217,111 @@
 
 <body>
 
-<header class="site-header">
-    <div class="container nav-wrap">
+    <!-- ===== Header ===== -->
 
-        <a class="brand" href="index.html">
-            <span class="brand-mark">AW</span>
-            <span>Dr. Abderrahim Ait Wakrime</span>
-        </a>
+    <header class="site-header">
+        <div class="container nav-wrap">
 
-        <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+            <a class="brand" href="index.html">
+                <span class="brand-mark">AW</span>
+                <span>Dr. Abderrahim Ait Wakrime</span>
+            </a>
 
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="enseignement.html">Teaching &amp; Pedagogy</a>
-            <a href="recherche.html">Scientific Research</a>
-            <a class="active" href="additional-publications.html">Publications</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+            <button class="menu-toggle" aria-label="Open menu">
+                &#9776;
+            </button>
 
-    </div>
-</header>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="enseignement.html">Teaching &amp; Pedagogy</a>
+                <a href="recherche.html">Scientific Research</a>
+                <a class="active" href="additional-publications.html">Publications</a>
+                <a href="contact.html">Contact</a>
+            </nav>
 
-<main>
-    <section class="publications-section">
-        <div class="container">
+        </div>
+    </header>
 
-            <div class="publications-intro">
+    <!-- ===== Main content ===== -->
+
+    <main>
+
+        <section class="page-hero publication-hero">
+            <div class="container">
                 <span class="eyebrow">SCIENTIFIC RESEARCH</span>
 
                 <h1>Scientific Publications</h1>
 
                 <p>
                     Explore the scientific contributions of Dr. Abderrahim
-                    Ait Wakrime in computer science, intelligent systems
+                    Ait Wakrime in computer science, intelligent systems,
                     and software-defined networking.
                 </p>
             </div>
+        </section>
 
-            <div id="publication-list" class="publication-list">
-                <p class="publication-status">
-                    Loading scientific publications...
-                </p>
+        <section class="section publications-section">
+            <div class="container">
+
+                <div class="publications-heading">
+                    <span class="eyebrow">RESEARCH OUTPUT</span>
+
+                    <h2>Journal Articles</h2>
+
+                    <p>
+                        Scientific contributions published in peer-reviewed
+                        journals, highlighting research in intelligent
+                        systems and computer networking.
+                    </p>
+                </div>
+
+                <div id="publication-list" class="publication-list">
+                    <p class="publication-status">
+                        Loading scientific publications...
+                    </p>
+                </div>
+
             </div>
+        </section>
 
+    </main>
+
+    <!-- ===== Footer ===== -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; Dr. Abderrahim Ait Wakrime</p>
         </div>
-    </section>
-</main>
+    </footer>
 
-<footer class="site-footer">
-    <div class="container">
-        <p>&copy; Dr. Abderrahim Ait Wakrime</p>
-    </div>
-</footer>
+    <script src="assets/js/main.js"></script>
 
-<script src="assets/js/main.js"></script>
+    <!-- ===== Publications loader ===== -->
 
-<script>
-(async function () {
-    const container = document.getElementById("publication-list");
+    <script>
+    (async function () {
+        const container = document.getElementById("publication-list");
 
-    try {
-        const response = await fetch(
-            "data/additional-publications.html?v=" + Date.now()
-        );
-
-        if (!response.ok) {
-            throw new Error("Publications could not be loaded.");
+        function createMeta(label) {
+            const element = document.createElement("span");
+            element.textContent = label;
+            return element;
         }
 
-        const html = await response.text();
-        const documentParser = new DOMParser();
-        const bibliography = documentParser.parseFromString(
-            html,
-            "text/html"
-        );
-
-        const entries = bibliography.querySelectorAll("p");
-
-        container.innerHTML = "";
-
-        entries.forEach(function (entry) {
-            const clone = entry.cloneNode(true);
-
-            clone.querySelectorAll("a[name]").forEach(function (anchor) {
-                anchor.remove();
-            });
-
-            const titleText = clone.textContent.trim();
-
-            if (
-                !titleText ||
-                titleText.startsWith("This file was generated by")
-            ) {
-                return;
-            }
-
+        function createPublicationCard() {
             const card = document.createElement("article");
             card.className = "publication-card";
 
             const icon = document.createElement("div");
             icon.className = "publication-icon";
+
             icon.innerHTML = `
-                <svg viewBox="0 0 24 24" fill="none"
-                     stroke="currentColor" stroke-width="1.7"
-                     stroke-linecap="round" stroke-linejoin="round"
+                <svg viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.7"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
                      aria-hidden="true">
                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                     <path d="M14 2v6h6"/>
@@ -291,15 +336,25 @@
             type.className = "publication-type";
             type.textContent = "Journal Article";
 
-            const title = document.createElement("h2");
+            const title = document.createElement("h3");
             title.className = "publication-title";
             title.textContent =
                 "Autonomous solution for controller placement problem of software-defined networking using MuZero based intelligent agents";
 
             const authors = document.createElement("p");
             authors.className = "publication-authors";
-            authors.innerHTML =
-                'Ouafae Benoudifa, <strong>Abderrahim Ait Wakrime</strong>, and Redouane Benaini';
+
+            authors.append(
+                document.createTextNode("Ouafae Benoudifa, ")
+            );
+
+            const professor = document.createElement("strong");
+            professor.textContent = "Abderrahim Ait Wakrime";
+
+            authors.append(
+                professor,
+                document.createTextNode(", and Redouane Benaini.")
+            );
 
             const journal = document.createElement("p");
             journal.className = "publication-journal";
@@ -309,38 +364,68 @@
             const meta = document.createElement("div");
             meta.className = "publication-meta";
 
-            meta.innerHTML = `
-                <span>
-                    <svg viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor" stroke-width="1.8"
-                         stroke-linecap="round" stroke-linejoin="round"
-                         aria-hidden="true">
-                        <rect x="3" y="4" width="18" height="17" rx="2"/>
-                        <path d="M16 2v4M8 2v4M3 10h18"/>
-                    </svg>
-                    2023
-                </span>
-                <span>Volume 35</span>
-                <span>Issue 10</span>
-                <span>Article 101842</span>
-            `;
+            meta.append(
+                createMeta("2023"),
+                createMeta("Volume 35"),
+                createMeta("Issue 10"),
+                createMeta("Article 101842")
+            );
 
             content.append(type, title, authors, journal, meta);
             card.append(icon, content);
-            container.appendChild(card);
-        });
 
-        if (!container.children.length) {
-            container.innerHTML =
-                '<p class="publication-status">No publications are currently available.</p>';
+            return card;
         }
 
-    } catch (error) {
-        container.innerHTML =
-            '<p class="publication-status">Scientific publications are temporarily unavailable. Please try again later.</p>';
-    }
-})();
-</script>
+        try {
+            const response = await fetch(
+                "data/additional-publications.html?v=" + Date.now()
+            );
+
+            if (!response.ok) {
+                throw new Error("Unable to load publications.");
+            }
+
+            const html = await response.text();
+            const parser = new DOMParser();
+            const parsedDocument = parser.parseFromString(
+                html,
+                "text/html"
+            );
+
+            const entries = parsedDocument.querySelectorAll("p");
+            const hasPublication = Array.from(entries).some(function (entry) {
+                const text = entry.textContent.trim();
+
+                return text &&
+                    !text.startsWith("This file was generated by");
+            });
+
+            container.replaceChildren();
+
+            if (!hasPublication) {
+                const message = document.createElement("p");
+                message.className = "publication-status";
+                message.textContent =
+                    "Scientific publications will be displayed here.";
+                container.appendChild(message);
+                return;
+            }
+
+            container.appendChild(createPublicationCard());
+
+        } catch (error) {
+            container.replaceChildren();
+
+            const message = document.createElement("p");
+            message.className = "publication-status";
+            message.textContent =
+                "Scientific publications are temporarily unavailable. Please try again later.";
+
+            container.appendChild(message);
+        }
+    })();
+    </script>
 
 </body>
 </html>
