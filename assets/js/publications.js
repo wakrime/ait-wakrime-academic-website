@@ -30,7 +30,7 @@ function renderPublications() {
   list.innerHTML = filtered.map(p => `
     <article class="publication-card">
       <div class="publication-meta">
-        <span class="publication-year">${esc(p.year || "â€”")}</span>
+        <span class="publication-year">${esc(p.year || "-")}</span>
 </div>
       <h3 class="publication-title">${esc(p.title)}</h3>
       ${p.authors ? `<p class="publication-authors">${esc(p.authors)}</p>` : ""}
