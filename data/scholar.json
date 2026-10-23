@@ -2,7 +2,7 @@
   "source": "Google Scholar",
   "profile_url": "https://scholar.google.com/citations?user=r0OoVlQAAAAJ&hl=en&oi=ao",
   "scholar_id": "r0OoVlQAAAAJ",
-  "last_sync": "2026-10-22T07:40:42.804Z",
+  "last_sync": "2026-10-23T07:38:08.425Z",
   "profile": {
     "name": "Abderrahim AIT WAKRIME",
     "affiliation": "Computer Science Department, Faculty of Sciences, Mohammed V University in Rabat, Morocco",
@@ -35,10 +35,10 @@
       }
     ],
     "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=r0OoVlQAAAAJ&citpid=2",
-    "citations": 329,
+    "citations": 330,
     "hIndex": 11,
     "i10Index": 12,
-    "citationsSince": 329
+    "citationsSince": 330
   },
   "citations_per_year": [
     {
@@ -87,7 +87,7 @@
     },
     {
       "year": 2026,
-      "citations": 30
+      "citations": 31
     }
   ],
   "public_access": null,
@@ -254,6 +254,16 @@
       "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4569018261912154778"
     },
     {
+      "citation_id": "r0OoVlQAAAAJ:isC4tDSrTZIC",
+      "title": "Securing SDN controller placement with MuZero and blockchain-based smart contracts",
+      "authors": "O Benoudifa, A Ait Wakrime, R Benaini",
+      "publication": "Journal of King Saud University Computer and Information Sciences 37 (5), 105, 2025",
+      "year": 2025,
+      "citations": 7,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:isC4tDSrTZIC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2566357002992370635"
+    },
+    {
       "citation_id": "r0OoVlQAAAAJ:hFOr9nPyWt4C",
       "title": "A transformation methodology for Capella to Event-B models with DSL verification",
       "authors": "K Bouba, A Ait Wakrime, Y Ouhammou, R Benaini",
@@ -272,16 +282,6 @@
       "citations": 7,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:_kc_bZDykSQC",
       "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5222271725112644736"
-    },
-    {
-      "citation_id": "r0OoVlQAAAAJ:isC4tDSrTZIC",
-      "title": "Securing SDN controller placement with MuZero and blockchain-based smart contracts",
-      "authors": "O Benoudifa, A Ait Wakrime, R Benaini",
-      "publication": "Journal of King Saud University Computer and Information Sciences 37 (5), 105, 2025",
-      "year": 2025,
-      "citations": 6,
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:isC4tDSrTZIC",
-      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2566357002992370635"
     },
     {
       "citation_id": "r0OoVlQAAAAJ:ULOm3_A8WrAC",
