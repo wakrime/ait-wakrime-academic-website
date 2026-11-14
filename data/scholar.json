@@ -2,7 +2,7 @@
   "source": "Google Scholar",
   "profile_url": "https://scholar.google.com/citations?user=r0OoVlQAAAAJ&hl=en&oi=ao",
   "scholar_id": "r0OoVlQAAAAJ",
-  "last_sync": "2026-11-13T09:39:32.941Z",
+  "last_sync": "2026-11-14T09:03:01.922Z",
   "profile": {
     "name": "Abderrahim AIT WAKRIME",
     "affiliation": "Computer Science Department, Faculty of Sciences, Mohammed V University in Rabat, Morocco",
@@ -35,10 +35,10 @@
       }
     ],
     "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=r0OoVlQAAAAJ&citpid=2",
-    "citations": 332,
+    "citations": 333,
     "hIndex": 11,
     "i10Index": 12,
-    "citationsSince": 332
+    "citationsSince": 333
   },
   "citations_per_year": [
     {
@@ -71,7 +71,7 @@
     },
     {
       "year": 2022,
-      "citations": 34
+      "citations": 35
     },
     {
       "year": 2023,
@@ -99,7 +99,7 @@
       "authors": "A Lahbib, A Ait Wakrime, A Laouiti, K Toumi, S Martin",
       "publication": "International conference on advanced information networking and applications …, 2020",
       "year": 2020,
-      "citations": 28,
+      "citations": 29,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:aqlVkmm33-oC",
       "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12990221121349710696"
     },
