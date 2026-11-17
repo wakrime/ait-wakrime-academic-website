@@ -2,7 +2,7 @@
   "source": "Google Scholar",
   "profile_url": "https://scholar.google.com/citations?user=r0OoVlQAAAAJ&hl=en&oi=ao",
   "scholar_id": "r0OoVlQAAAAJ",
-  "last_sync": "2026-11-16T09:51:30.817Z",
+  "last_sync": "2026-11-17T10:49:08.182Z",
   "profile": {
     "name": "Abderrahim AIT WAKRIME",
     "affiliation": "Computer Science Department, Faculty of Sciences, Mohammed V University in Rabat, Morocco",
@@ -35,10 +35,10 @@
       }
     ],
     "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=r0OoVlQAAAAJ&citpid=2",
-    "citations": 332,
+    "citations": 334,
     "hIndex": 11,
     "i10Index": 12,
-    "citationsSince": 332
+    "citationsSince": 334
   },
   "citations_per_year": [
     {
@@ -87,7 +87,7 @@
     },
     {
       "year": 2026,
-      "citations": 34
+      "citations": 36
     }
   ],
   "public_access": null,
@@ -139,7 +139,7 @@
       "authors": "Z Boudi, AA Wakrime, M Toub, M Haloua",
       "publication": "Formal Aspects of Computing 35 (1), 1-17, 2023",
       "year": 2023,
-      "citations": 18,
+      "citations": 19,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:IWHjjKOFINEC",
       "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11655248968052739539"
     },
@@ -214,6 +214,16 @@
       "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11323084151281451293"
     },
     {
+      "citation_id": "r0OoVlQAAAAJ:isC4tDSrTZIC",
+      "title": "Securing SDN controller placement with MuZero and blockchain-based smart contracts",
+      "authors": "O Benoudifa, A Ait Wakrime, R Benaini",
+      "publication": "Journal of King Saud University Computer and Information Sciences 37 (5), 105, 2025",
+      "year": 2025,
+      "citations": 8,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:isC4tDSrTZIC",
+      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2566357002992370635"
+    },
+    {
       "citation_id": "r0OoVlQAAAAJ:qxL8FJ1GzNcC",
       "title": "A model-driven engineering approach for business process based saas services composition",
       "authors": "N Fattouch, M Rekik, A Ait Wakrime, K Boukadi",
@@ -252,16 +262,6 @@
       "citations": 8,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:ufrVoPGSRksC",
       "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4569018261912154778"
-    },
-    {
-      "citation_id": "r0OoVlQAAAAJ:isC4tDSrTZIC",
-      "title": "Securing SDN controller placement with MuZero and blockchain-based smart contracts",
-      "authors": "O Benoudifa, A Ait Wakrime, R Benaini",
-      "publication": "Journal of King Saud University Computer and Information Sciences 37 (5), 105, 2025",
-      "year": 2025,
-      "citations": 7,
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=r0OoVlQAAAAJ&pagesize=100&citation_for_view=r0OoVlQAAAAJ:isC4tDSrTZIC",
-      "cited_by_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2566357002992370635"
     },
     {
       "citation_id": "r0OoVlQAAAAJ:hFOr9nPyWt4C",
